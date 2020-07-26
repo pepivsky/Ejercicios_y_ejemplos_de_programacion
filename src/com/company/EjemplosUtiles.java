@@ -38,7 +38,7 @@ public class EjemplosUtiles {
         }
 
         System.out.println(a);*/
-
+//Sumar los elementos de un arreglo
         Scanner scanner = new Scanner(System.in);
 
         int a = scanner.nextInt();
