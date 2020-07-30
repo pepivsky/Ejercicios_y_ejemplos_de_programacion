@@ -51,7 +51,33 @@ public class EjemplosUtiles {
 
         System.out.println(sum);
 
-        //Revisar si algún elemento está en el arreglo
+        //+++++++++Revisar si algún elemento está en el arreglo++++++++++
         //Arrays.asList(arrayPrimos).contains(elemento) //el array debe ser Integer
+
+        //++++++++++Imprimir a decimales limitados+++++++++
+        /*Usando DecimalFormat
+
+        DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println(df.format(number));
+        Salida : 1.42
+        Usando String.Format
+
+        System.out.println(String.format("%.2f", number));
+        Salida : 1.42
+        Si solo desea a que la salida tenga ese formato aplicaría numberformat
+
+        System.out.printf("Valor: %.2f", number );
+        Salida : 1.42
+        Mediante Math.Round() donde la cantidad de ceros es la cantidad de decimales a limitar
+
+        System.out.println((double)Math.round(number * 100d) / 100d);
+        Salida : 1.42
+        Usando la clase BigDecimal , usando el método setScale que recibe dos parámetros la cantidad de decimales a limitar y el modo de redondeo
+
+        BigDecimal bd = new BigDecimal(number);
+        bd = bd.setScale(2, RoundingMode.HALF_UP);
+        System.out.println(bd.doubleValue());
+        Salida 1.42*/
+
     }
 }
