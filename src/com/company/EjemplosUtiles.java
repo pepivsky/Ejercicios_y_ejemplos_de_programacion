@@ -50,5 +50,8 @@ public class EjemplosUtiles {
         }
 
         System.out.println(sum);
+
+        //Revisar si algún elemento está en el arreglo
+        //Arrays.asList(arrayPrimos).contains(elemento) //el array debe ser Integer
     }
 }
