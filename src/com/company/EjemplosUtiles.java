@@ -39,7 +39,7 @@ public class EjemplosUtiles {
 
         System.out.println(a);*/
 //Sumar los elementos de un arreglo
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
 
         int a = scanner.nextInt();
         int b = scanner.nextInt();
@@ -49,7 +49,7 @@ public class EjemplosUtiles {
             sum += i;
         }
 
-        System.out.println(sum);
+        System.out.println(sum);*/
 
         //+++++++++Revisar si algún elemento está en el arreglo++++++++++
         //Arrays.asList(arrayPrimos).contains(elemento) //el array debe ser Integer
@@ -78,6 +78,14 @@ public class EjemplosUtiles {
         bd = bd.setScale(2, RoundingMode.HALF_UP);
         System.out.println(bd.doubleValue());
         Salida 1.42*/
+
+        //Revisar si un String contiene otro ignorando si esta en mayusculas o minusculas
+        String country = "Mexico";
+        if (country.toLowerCase().contains("XICO".toLowerCase())) {
+            System.out.println("true"); // true
+        } else {
+            System.out.println("false");
+        }
 
     }
 }

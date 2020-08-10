@@ -11,7 +11,7 @@ public class TraductorPigLatin {
         String newWord = "";
         int wordLength = 0;
 
-        if ("aeiouAEIOU".contains(Character.toString(firstLetter))) { //primera es vocal
+        if ("aeiouAEIOU".contains(Character.toString(firstLetter))) { //revisar si la primera es vocal
             newWord = word + "way";
 
         } else { //es consonante
