@@ -55,6 +55,8 @@ public class EjemplosUtiles {
         //Arrays.asList(arrayPrimos).contains(elemento) //el array debe ser Integer
 
         //++++++++++Imprimir a decimales limitados+++++++++
+
+
         /*Usando DecimalFormat
 
         DecimalFormat df = new DecimalFormat("#.00");
@@ -79,6 +81,7 @@ public class EjemplosUtiles {
         System.out.println(bd.doubleValue());
         Salida 1.42*/
 
+        //++++++++++Revisar si un String contiene otro ignorando si esta en mayusculas o minusculas+++++++++
         //Revisar si un String contiene otro ignorando si esta en mayusculas o minusculas
         String country = "Mexico";
         if (country.toLowerCase().contains("XICO".toLowerCase())) {
@@ -86,6 +89,14 @@ public class EjemplosUtiles {
         } else {
             System.out.println("false");
         }
+        //++++++++++Obetner valor minimo y maximo de un array+++++++++
+        //int min1 = Arrays.stream(box1).min().getAsInt();
+        //int max1 = Arrays.stream(box1).max().getAsInt();
+
+        //++++++++++Obetner valor minimo y maximo de un ArrayList+++++++++
+        //int max = Collections.max(numerosDivisibles);
+        //int min = Collections.min(numerosDivisibles);
+
 
     }
 }
