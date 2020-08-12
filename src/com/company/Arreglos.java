@@ -171,6 +171,15 @@ Remember these 3 and remember to apply the first letter of the number type you'r
             System.out.println("false");
         }
 
+        /****************Revisar si el elemento actual es menor que el siguiente**************************************/
+        /*//recorriendo el arreglo
+        int siguiente = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] < array[i+1]) {
+                contador++;
+            }
+        }*/
+
 
 
     }
