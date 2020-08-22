@@ -89,11 +89,15 @@ public class EjemplosUtiles {
         } else {
             System.out.println("false");
         }
-        //++++++++++Obetner valor minimo y maximo de un array+++++++++
+        //++++++++++Obetner valor menor y mayor de un array+++++++++
         //int min1 = Arrays.stream(box1).min().getAsInt();
         //int max1 = Arrays.stream(box1).max().getAsInt();
 
-        //++++++++++Obetner valor minimo y maximo de un ArrayList+++++++++
+        //otra forma
+        //int max = Collections.max(Arrays.asList(array)); // obtiene el valor mayor del arreglo
+        //int indice = Arrays.asList(array).indexOf(max);// obtiene el indice del mayor
+
+        //++++++++++Obetner valor menor y mayor de un ArrayList+++++++++
         //int max = Collections.max(numerosDivisibles);
         //int min = Collections.min(numerosDivisibles);
 

@@ -52,7 +52,7 @@ public class IndexOfMax {
         }
 
         int max = Collections.max(Arrays.asList(array)); // obtiene el valor mayor del arreglo
-        int indice = Arrays.asList(array).indexOf(max);// obtiene el indice del mayop
+        int indice = Arrays.asList(array).indexOf(max);// obtiene el indice del mayor
         System.out.println(max);
         System.out.println(indice);
     }
