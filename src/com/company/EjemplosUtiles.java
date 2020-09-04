@@ -38,7 +38,7 @@ public class EjemplosUtiles {
         }
 
         System.out.println(a);*/
-//Sumar los elementos de un arreglo
+//++++++++++++++++++++Sumar los elementos de un arreglo++++++++++++++
         /*Scanner scanner = new Scanner(System.in);
 
         int a = scanner.nextInt();
@@ -53,6 +53,9 @@ public class EjemplosUtiles {
 
         //+++++++++Revisar si algún elemento está en el arreglo++++++++++
         //Arrays.asList(arrayPrimos).contains(elemento) //el array debe ser Integer
+
+        //++++++++++Obtener el indice de un elemento del arreglo++++++++++
+        //int indice = Arrays.asList(array).indexOf(max);// obtiene el indice del mayor
 
         //++++++++++Imprimir a decimales limitados+++++++++
 
@@ -100,6 +103,14 @@ public class EjemplosUtiles {
         //++++++++++Obetner valor menor y mayor de un ArrayList+++++++++
         //int max = Collections.max(numerosDivisibles);
         //int min = Collections.min(numerosDivisibles);
+
+        //++++++++++++Busqueda en arreglo usando BinarySearch+++++++++++
+        //hay que ordenar el arreglo para que la busqueda funcione
+        /*Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+
+        int indice = Arrays.binarySearch(array,0, array.length, 10);
+        System.out.println(indice);*/
 
 
     }
