@@ -28,7 +28,7 @@ Sample Output 1:
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int mitad = number / 2;
-        String array [][] = new String[number][number];
+        String[][] array = new String[number][number];
 
         int contador = array.length-1;
         //Llenar con puntos
