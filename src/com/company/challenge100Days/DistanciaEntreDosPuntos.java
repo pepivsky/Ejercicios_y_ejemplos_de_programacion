@@ -11,16 +11,16 @@ import java.util.Scanner;
 public class DistanciaEntreDosPuntos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int aX, aY;
-        int bX, bY;
+        double aX, aY;
+        double bX, bY;
         double resultado;
 
         System.out.println("Ingresa las coordenadas del punto 'a'");
-        aX = scanner.nextInt();
-        aY = scanner.nextInt();
+        aX = scanner.nextDouble();
+        aY = scanner.nextDouble();
         System.out.println("Ingresa las coordenadas del punto 'b'");
-        bX = scanner.nextInt();
-        bY = scanner.nextInt();
+        bX = scanner.nextDouble();
+        bY = scanner.nextDouble();
 
         //formula:  d = √(xb - xa)2 + (yb - ya)2
         resultado = Math.sqrt(Math.pow(bX - aX, 2) + Math.pow(bY - aY, 2));
