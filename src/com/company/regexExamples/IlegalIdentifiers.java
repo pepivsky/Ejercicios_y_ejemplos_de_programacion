@@ -1,3 +1,5 @@
+package com.company.regexExamples;
+
 import java.util.Scanner;
 
 public class IlegalIdentifiers {

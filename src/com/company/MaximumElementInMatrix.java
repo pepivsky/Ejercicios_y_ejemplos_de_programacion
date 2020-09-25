@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.Scanner;
 /**
  * Maximum element in a matrix
