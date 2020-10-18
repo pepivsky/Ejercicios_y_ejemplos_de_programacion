@@ -67,10 +67,23 @@ public class CodigoMorse {
 
         System.out.println(texto + " -> " + traduccion);
 
+        //Obteniendo clave a partir del valor
+        System.out.println(getKeyFromValue(alphabetMorse,".-"));    
 
 
 
 
 
+
+
+    }
+    //obtener clave a partir dek valor
+    public static Object getKeyFromValue(Map hm, Object value) {
+        for (Object o : hm.keySet()) {
+            if (hm.get(o).equals(value)) {
+                return o;
+            }
+        }
+        return null;
     }
 }
