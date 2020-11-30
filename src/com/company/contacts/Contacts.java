@@ -76,7 +76,7 @@ class Main {
         System.out.println("Enter the number:");
         String phoneNumber = scanner.nextLine();
 
-        Contacts contact1 = new Contacts(name, surname, phoneNumber);
+        Contacts2 contact1 = new Contacts2(name, surname, phoneNumber);
 
         System.out.println("A record created!");
         System.out.println("A Phone Book with a single record created!");

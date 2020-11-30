@@ -1,10 +1,10 @@
 package com.company;
 
 import java.util.Scanner;
-
+//clase para que nos dice el valor mas cercano a uno ingresado, lo compara con los elementos de un arreglo de enteros
 public class ValorMasCercano {
     public static void main(String[] args) {
-        int[] numeros = {3, 7};
+        int[] numeros = {3, 7}; //valores a evaluar
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa un numero");
         int num = scanner.nextInt();
