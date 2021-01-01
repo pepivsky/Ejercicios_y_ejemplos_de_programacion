@@ -22,7 +22,7 @@ Write a regex that can match all occurrences of o followed immediately by oo in 
 public class PositiveLookahead {
     public static void main(String[] args) {
 
-        Regex_Test tester = new Regex_Test();
+        RegexTest tester = new RegexTest();
         tester.checker("o(?=oo)"); //hace match con una o en alguna posicion de la palabra que sea seguida por otras dos "o"
 
     }
