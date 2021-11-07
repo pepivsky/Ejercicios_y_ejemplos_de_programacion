@@ -8,7 +8,8 @@ public class SortClasses {
                                   List<Polygon> polygons,
                                   List<Square> squares,
                                   List<Circle> circles) {
-        // write your code here ordenando las clases, si es de algun tipo listado se inserta en su lista respectivaa
+        // write your code here
+        // ordenando las clases, si es de algun tipo listado se inserta en su lista respectivaa
         for (Shape2 someShape : array) {
             if (someShape.getClass() == Shape2.class) {
                 shapes.add(someShape);

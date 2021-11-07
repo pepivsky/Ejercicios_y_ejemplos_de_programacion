@@ -20,6 +20,11 @@ public class Secuencia {
         int limit = scanner.nextInt();
         int contador = 0;
 
+        long inicio = System.currentTimeMillis();
+
+
+
+
         for (int i = 0; i <= limit; i++) {
             for (int j = 1; j <= i ; j++) {
                 if (contador == limit) {
@@ -31,6 +36,11 @@ public class Secuencia {
             }
         }
         System.out.println();
+        long fin = System.currentTimeMillis();
+
+        double tiempo = (double) (fin - inicio);
+
+        System.out.println(tiempo +" milisegundos");
         //System.out.println("contador = " + contador);
     }
 }
