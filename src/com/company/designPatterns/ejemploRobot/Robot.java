@@ -17,6 +17,8 @@ Legs : 4
 Hands : 2
 Eyes : 1
  */
+
+// concrete product
 class Robot {
 
     private String CPU;
@@ -31,6 +33,7 @@ class Robot {
         this.eyes = eyes;
     }
 
+    // concrete builder
     public static class RobotBuilder {
 
         /* write your code here (fields) */

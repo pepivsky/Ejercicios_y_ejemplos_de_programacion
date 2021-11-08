@@ -39,8 +39,9 @@ class TestDrive {
 
         burgerStore.orderBurger(chineseName);
         burgerStore.orderBurger(americanName);
-        burgerStore.orderBurger(russianName);
+        Burger russianBurger = burgerStore.orderBurger(russianName);
 
+        System.out.println(russianBurger);
 
         /*Burger chineseBurger = burgerStore.orderBurger(chineseName);
         Burger americanBurger = burgerStore.orderBurger(americanName);
@@ -115,6 +116,13 @@ abstract class Burger {
     }
 
     abstract void doSomethingElse();
+
+    @Override
+    public String toString() {
+        return "Burger{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
 
 // concrete product
