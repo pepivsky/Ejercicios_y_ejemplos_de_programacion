@@ -1,10 +1,9 @@
-package com.company.StaticFactory.time;
+package com.company.designPatterns.creationalPatterns.base.staticFactory.time;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.Scanner;
-/*
-
+/* Ejemplo de static factory sin usar constructor para la clase producto
 Static factory methods for Time
 The normal way to create an instance of a class is to use a public constructor of the class. But there is another technique. A class can provide a public static factory method that returns an instance of the class. An advantage of static factory methods is that they have names that make the code easier to read.
 
@@ -36,6 +35,7 @@ midnight
 
 Sample Output:
 0 0 0
+
  */
 class Time {
 
@@ -43,38 +43,48 @@ class Time {
     int minute;
     int second;
 
-    public Time(int hour, int minute, int second) {
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
-    }
-
     public static Time noon() {
         // write your code here
-        return new Time(12, 0, 0);
+        Time time = new Time();
+        time.hour = 12;
+        time.minute = 0;
+        time.second = 0;
+        return time;
     }
 
     public static Time midnight() {
         // write your code here
-        return new Time(0, 0, 0);
-
+        Time time = new Time();
+        time.hour = 0;
+        time.minute = 0;
+        time.second = 0;
+        return time;
     }
 
     public static Time ofSeconds(long seconds) {
         // write your code here
+        Time time = new Time();
+        // obtniendo un objeto localDateTime a partir de los segundos transcurridos desde el anio 1970
         LocalDateTime localDateTime = LocalDateTime.ofEpochSecond(seconds, 0, ZoneOffset.UTC);
-        return new Time(localDateTime.getHour(), localDateTime.getMinute(), localDateTime.getSecond());
+        time.hour = localDateTime.getHour();
+        time.minute = localDateTime.getMinute();
+        time.second = localDateTime.getSecond();
+        return time;
 
     }
 
     public static Time of(int hour, int minute, int second) {
         // write your code here
+        Time time = new Time();
         boolean correctHour = hour < 24 && hour >= 0;
         boolean correctMinute = minute < 60 && minute >= 0;
         boolean correctSecond = second < 60 && second >= 0;
 
         if (correctHour && correctMinute && correctSecond) {
-            return new Time(hour, minute, second);
+            time.hour = hour;
+            time.minute = minute;
+            time.second = second;
+            return time;
         } else {
             return null;
         }
