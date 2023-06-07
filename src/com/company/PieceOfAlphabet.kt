@@ -25,7 +25,8 @@ false
  */
 
 fun main() {
-    val alphabet = "abcdefghijklmnopqrstuvwxyz"
+    val alphabet = ('a'..'z').joinToString("")
+    println(alphabet)
     println(alphabet.contains(readLine()!!))
 
     /* otra solucion
